@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Academic Advisor</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.min.css?_v=20231014140236">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js?_v=20231014140236"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231014140236"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+    <div class="header__top">
+        <div class="header__container container">
+            <div class="header__top-body">
+                <div class="header__hours" data-desk="phones, after">
+                    <svg>
+                        <use href="img/icons/icons.svg#clock"></use>
+                    </svg>
+                    Mo – Fr: 10:00 - 18:00
+                </div>
+                <div class="header__phones" data-move="phones, 992" data-mob="btn, before">
+                    <a href="tel:380503361499" class="header__phone">
+                        <svg>
+                            <use href="img/icons/icons.svg#phone"></use>
+                        </svg>
+                        + 380 (50) 336 14 99
+                    </a>
+                    <a href="tel:380930222773" class="header__phone">
+                        <svg>
+                            <use href="img/icons/icons.svg#phone"></use>
+                        </svg>
+                        + 380 (93) 022 27 73
+                    </a>
+                </div>
+                <div class="header__socials" data-desk="lang, after">
+                    <a href="#" class="header__social header__social_mob">
+                        <img src="img/icons/instagram.svg" alt="Icon">
+                        <span>Instagram</span>
+                    </a>
+                    <a href="#" class="header__social header__social_mob">
+                        <img src="img/icons/youtube.svg" alt="Icon">
+                        <span>Youtube</span>
+                    </a>
+                    <a href="#" class="header__social header__social_mob">
+                        <img src="img/icons/facebook.svg" alt="Icon">
+                        <span>Facebook</span>
+                    </a>
+                    <a href="#" class="header__social header__social_mob">
+                        <img src="img/icons/mail.svg" alt="Icon">
+                        <span>E-mail</span>
+                    </a>
+                    <a href="#" class="header__social">
+                        <img src="img/icons/telegram.svg" alt="Icon">
+                        <span>Telegram</span>
+                    </a>
+                    <a href="#" class="header__social">
+                        <img src="img/icons/whatsapp.svg" alt="Icon">
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+                <div class="header__lang lang" data-move="lang, 576">
+                    <div class="lang__select select-box">
+                        <div class="lang__container options-container">
+                            <div class="lang__option option">
+                                <input type="radio" id="en" name="lang" value="en">
+                                <label for="en">En</label>
+                            </div>
+                            <div class="lang__option option">
+                                <input type="radio" id="ua" name="lang" value="ua">
+                                <label for="ua">Ua</label>
+                            </div>
+                            <div class="lang__option option">
+                                <input type="radio" id="de" name="lang" value="de">
+                                <label for="de">De</label>
+                            </div>
+                        </div>
+                        <div class="lang__selected selected">
+                            <span>En</span>
+                            <svg>
+                                <use href="img/icons/icons.svg#arrow"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__main">
+        <div class="header__container container">
+            <div class="header__main-body">
+                <div class="header__logo logo-header">
+                    <a href="#" class="logo-header__link">
+                        <picture>
+                            <source data-srcset="img/logo-dark.webp" srcset="img/plug.png" type="image/webp">
+                            <img data-src="img/logo-dark.png" src="img/plug.png" alt="Image">
+                        </picture>
+                    </a>
+                </div>
+                <div class="header__menu menu" data-desk="btn, after">
+                    <nav class="menu__body" data-mob="phones, append">
+                        <ul class="menu__list">
+                            <li class="menu__item menu__item_mob" data-mob="submenu, append">
+                                <a href="#" class="menu__link menu__link_mob">
+                                    Programs
+                                    <svg>
+                                        <use href="img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">
+                                    About Us
+                                    <svg>
+                                        <use href="img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">
+                                    Full support
+                                    <svg>
+                                        <use href="img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">
+                                    Student stories
+                                    <svg>
+                                        <use href="img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">
+                                    Blog
+                                    <svg>
+                                        <use href="img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">
+                                    Contacts
+                                    <svg>
+                                        <use href="img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">
+                                    For Partners
+                                    <svg>
+                                        <use href="img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">
+                                    IELTS
+                                    <svg>
+                                        <use href="img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <a href="#" class="header__btn btn-yellow" data-move="btn, 576">
+                    Book a consultation
+                    <svg>
+                        <use href="img/icons/icons.svg#arrow"></use>
+                    </svg>
+                </a>
+                <button type="button" class="header__menu-icon btn-yellow" data-mob="lang, before">
+                    Menu
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="header__submenu submenu">
+        <div class="submenu__container container" data-desk="submenu, append">
+            <nav class="submenu__body" data-move="submenu, 992">
+                <ul class="submenu__list">
+                    <li class="submenu__item">
+                        <a href="#" class="submenu__link">
+                            <svg>
+                                <use href="img/icons/icons.svg#flag"></use>
+                            </svg>
+                            Secondary Education
+                            <svg>
+                                <use href="img/icons/icons.svg#arrow"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="submenu__item">
+                        <a href="#" class="submenu__link">
+                            <svg>
+                                <use href="img/icons/icons.svg#flag"></use>
+                            </svg>
+                            Pathway Programs
+                            <svg>
+                                <use href="img/icons/icons.svg#arrow"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="submenu__item">
+                        <a href="#" class="submenu__link">
+                            <svg>
+                                <use href="img/icons/icons.svg#flag"></use>
+                            </svg>
+                            Higher education
+                            <svg>
+                                <use href="img/icons/icons.svg#arrow"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="submenu__item">
+                        <a href="#" class="submenu__link">
+                            <svg>
+                                <use href="img/icons/icons.svg#flag"></use>
+                            </svg>
+                            Summer Schools
+                            <svg>
+                                <use href="img/icons/icons.svg#arrow"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+        <div class="page">
+            <div class="promo">
+                <div class="promo__bg">
+                    <picture>
+                        <source data-srcset="img/main/bg.webp" srcset="img/plug.png" type="image/webp">
+                        <img data-src="img/main/bg.jpg" src="img/plug.png" alt="Image">
+                    </picture>
+                </div>
+                <div class="promo__container container">
+                    <div class="promo__body">
+                        <h1 class="promo__title title-h1">Entry to the program be-like folding</h1>
+                        <p class="promo__text paragraph-m">
+                            Our students were insured in one of the highest-rated cities in the world, and we know that
+                            it is real to enter there.
+                        </p>
+                        <a href="#" class="promo__link btn-yellow">
+                            Book a consultation
+                            <svg>
+                                <use href="img/icons/icons.svg#arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="about">
+                <div class="about__container container">
+                    <div class="about__body">
+                        <div class="about__image">
+                            <picture>
+                                <source data-srcset="img/about/image.webp" srcset="img/plug.png" type="image/webp">
+                                <img data-src="img/about/image.jpg" src="img/plug.png" alt="Image">
+                            </picture>
+                        </div>
+                        <div class="about__info">
+                            <span class="about__label">About us</span>
+                            <h2 class="about__title title-h2">The Academic Advisor</h2>
+                            <p class="about__text paragraph-s">
+                                Our company provides a wide range of professional services in the field of international
+                                education. We promote the best educational programs and other primary mortgages in
+                                Europe, USA, Canada, Australia and New Zealand. The parting status of nashi components
+                                “The Academic Advisor” is Yak of the Majean -Ovnitziya Akreditakiy “Icef” - Provide
+                                Assocyani, Scho Viddovydniy. We are fakhіvtsі with international illumination, yakі
+                                themselves went all the way to enter the VNZ beyond the cordon.
+                            </p>
+                            <a href="#" class="about__link btn-yellow">
+                                Book a consultation
+                                <svg>
+                                    <use href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stat">
+                <div class="stat__container container">
+                    <div class="stat__body">
+                        <ul class="stat__list">
+                            <li class="stat__item">
+                                <h3 class="stat__title title-h3">100%</h3>
+                                <p class="stat__desc paragraph-s">
+                                    Lorem Ipsum dolor sit amet
+                                </p>
+                            </li>
+                            <li class="stat__item">
+                                <h3 class="stat__title title-h3">IELTS 7.0</h3>
+                                <p class="stat__desc paragraph-s">
+                                    Lorem Ipsum dolor sit amet
+                                </p>
+                            </li>
+                            <li class="stat__item">
+                                <h3 class="stat__title title-h3">20+</h3>
+                                <p class="stat__desc paragraph-s">
+                                    Lorem Ipsum dolor sit amet
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="who">
+                <div class="who__container container">
+                    <div class="who__body">
+                        <h2 class="who__title title-h2">Who we are</h2>
+                        <p class="who__desc paragraph-s">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <div class="who__cards">
+                            <div class="who__card card-who">
+                                <p class="card-who__text">
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+                                    eros elementum tristique. Duis cursus, mi quis viverra ornare."
+                                </p>
+                                <div class="card-who__person">
+                                    <div class="card-who__photo">
+                                        <picture>
+                                            <source data-srcset="img/who/image1.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/who/image1.jpg" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                    <div class="card-who__info">
+                                        <div class="card-who__name">Founder Name Surname</div>
+                                        <div class="card-who__details">Position, Company name</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="who__card card-who">
+                                <p class="card-who__text">
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+                                    eros elementum tristique. Duis cursus, mi quis viverra ornare."
+                                </p>
+                                <div class="card-who__person">
+                                    <div class="card-who__photo">
+                                        <picture>
+                                            <source data-srcset="img/who/image2.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/who/image2.jpg" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                    <div class="card-who__info">
+                                        <div class="card-who__name">Founder Name Surname</div>
+                                        <div class="card-who__details">Position, Company name</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="services">
+                <div class="services__container container">
+                    <div class="services__body">
+                        <h2 class="services__title title-h2">Our Services</h2>
+                        <p class="services__desc paragraph-s">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <div class="services__cards">
+                            <div class="services__card card-services">
+                                <div class="card-services__icon">
+                                    <picture>
+                                        <source data-srcset="img/services/icon1.svg" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/services/icon1.svg" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <h3 class="card-services__title">Индивидуальная работа с профилем студента:</h3>
+                                <ul class="card-services__list">
+                                    <li class="card-services__item">
+                                        Детальный анализ академического профиля студента.
+                                    </li>
+                                    <li class="card-services__item">
+                                        Выбор наилучшего академического пути для достижения положительного результата.
+                                    </li>
+                                    <li class="card-services__item">
+                                        Помощь с выбором будущей профессии или консультирование по возможной смене
+                                        специализации.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="services__card card-services">
+                                <div class="card-services__icon">
+                                    <picture>
+                                        <source data-srcset="img/services/icon2.svg" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/services/icon2.svg" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <h3 class="card-services__title">Индивидуальный подбор учебных заведений и программ:
+                                </h3>
+                                <ul class="card-services__list">
+                                    <li class="card-services__item">
+                                        Подбор программ обучения по принципу “Perfect Match”.
+                                    </li>
+                                    <li class="card-services__item">
+                                        Составление индивидуально гида-путеводителя с детальным обзором подходящих
+                                        учебных заведений.
+                                    </li>
+                                    <li class="card-services__item">
+                                        Предоставления актуальной информации: вступительные требования, подсчет
+                                        расходов, варианты по проживанию.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="services__card card-services">
+                                <div class="card-services__icon">
+                                    <picture>
+                                        <source data-srcset="img/services/icon3.svg" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/services/icon3.svg" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <h3 class="card-services__title">Формирование сильного пакета документов:
+                                </h3>
+                                <ul class="card-services__list">
+                                    <li class="card-services__item">
+                                        Сбор академических документов и детальная консультация по вопросам сдачи
+                                        вступительных тестов.
+                                    </li>
+                                    <li class="card-services__item">
+                                        Помощь в составлении мотивационных писем, рекомендаций и академического резюме.
+                                    </li>
+                                    <li class="card-services__item">
+                                        Консультирование по вопросам составления творческого портфолио и подготовка к
+                                        собеседованию.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="services__card card-services">
+                                <div class="card-services__icon">
+                                    <picture>
+                                        <source data-srcset="img/services/icon4.svg" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/services/icon4.svg" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <h3 class="card-services__title">Подача документов и отслеживание прогресса:
+                                </h3>
+                                <ul class="card-services__list">
+                                    <li class="card-services__item">
+                                        Заполнение аппликационных форм, регистрация на портале и подача документов.
+                                    </li>
+                                    <li class="card-services__item">
+                                        Отслеживание статуса аппликации, решение всех задач и выполнение дополнительных
+                                        академических требований.
+                                    </li>
+                                    <li class="card-services__item">
+                                        Прямое общение с представителем приемной комиссии и получение подтверждения о
+                                        зачислении.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="services__card card-services">
+                                <div class="card-services__icon">
+                                    <picture>
+                                        <source data-srcset="img/services/icon5.svg" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/services/icon5.svg" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <h3 class="card-services__title">Организация проживания и фаза регистрации:
+                                </h3>
+                                <ul class="card-services__list">
+                                    <li class="card-services__item">
+                                        Предоставление вариантов по проживанию и оформление бронирования.
+                                    </li>
+                                    <li class="card-services__item">
+                                        Оформление медицинской страховки и подбор опекунских услуг (для студентов младше
+                                        18 лет).
+                                    </li>
+                                    <li class="card-services__item">
+                                        Финальная регистрация в учебном заведении, заполнение всех форм и подготовка
+                                        CAS.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="services__card card-services">
+                                <div class="card-services__icon">
+                                    <picture>
+                                        <source data-srcset="img/services/icon6.svg" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/services/icon6.svg" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <h3 class="card-services__title">Виза, организация поездки и поддержка во время учебы:
+                                </h3>
+                                <ul class="card-services__list">
+                                    <li class="card-services__item">
+                                        Сбор документов на визу, заполнение визовой анкеты, запись на подачу и
+                                        отслеживание статуса визы.
+                                    </li>
+                                    <li class="card-services__item">
+                                        Pre-Arrival консультирование и помощь в оформлении трансфера.
+                                    </li>
+                                    <li class="card-services__item">
+                                        Поддержка студента на протяжении первого года обучения в Великобритании.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="why">
+                <div class="why__container container">
+                    <div class="why__body">
+                        <h2 class="why__title title-h2">Why us?</h2>
+                        <p class="why__desc paragraph-s">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <div class="why__cards">
+                            <div class="why__card card-why">
+                                <div class="card-why__image">
+                                    <picture>
+                                        <source data-srcset="img/why/image1.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/why/image1.jpg" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <h3 class="card-why__title">
+                                    We work with the best educational institutions around the world.
+                                </h3>
+                                <p class="card-why__desc">
+                                    The Academic Advisor is not limited to a specific list of educational institutions,
+                                    we work with both public and private educational institutions around the world. Our
+                                    team of specialists carries out an individual selection of training programs and
+                                    educational institutions for each student, thereby helping to determine the best
+                                    option for further study, which will fully meet the wishes of our client.
+                                </p>
+                            </div>
+                            <div class="why__card card-why">
+                                <div class="card-why__image">
+                                    <picture>
+                                        <source data-srcset="img/why/image2.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/why/image2.jpg" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <h3 class="card-why__title">
+                                    Opportunity for scholarships
+                                </h3>
+                                <p class="card-why__desc">
+                                    Many universities offer generous funding programs in the form of scholarships and
+                                    grants, making free study abroad even more affordable. The Academic Advisor team has
+                                    already helped more than one student to successfully prepare and apply for a grant
+                                    or scholarship for study. In 2018, the amount of all scholarships allocated to our
+                                    students amounted to $83,000.
+                                </p>
+                            </div>
+                            <div class="why__card card-why">
+                                <div class="card-why__image">
+                                    <picture>
+                                        <source data-srcset="img/why/image3.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/why/image3.jpg" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <h3 class="card-why__title">
+                                    Admission to programs of any complexity
+                                </h3>
+                                <p class="card-why__desc">
+                                    Our students have been enrolled in some of the most rated universities in the world,
+                                    and that is why we know that it is real to enter there. Admission to some training
+                                    programs can be quite difficult, but thanks to our extensive experience, we know
+                                    which strategy will be most effective. Do not doubt your abilities, and we will help
+                                    you in successful admission.
+                                </p>
+                            </div>
+                            <div class="why__card card-why">
+                                <div class="card-why__image">
+                                    <picture>
+                                        <source data-srcset="img/why/image4.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/why/image4.jpg" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <h3 class="card-why__title">
+                                    Making a strong package of documents
+                                </h3>
+                                <p class="card-why__desc">
+                                    We know how to correctly present your achievements to the selection committee. The
+                                    Academic Advisor helps in the preparation of essays, motivational and recommendation
+                                    letters, a professional resume (CV), as well as a creative portfolio for admission
+                                    programs to foreign universities related to design, architecture and music. Also,
+                                    The Academic Advisor helps to translate and legalize all documents, issue a visa
+                                    package and carry out high-quality preparation for a visa interview.
+                                </p>
+                            </div>
+                            <div class="why__card card-why">
+                                <div class="card-why__image">
+                                    <picture>
+                                        <source data-srcset="img/why/image5.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/why/image5.jpg" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <h3 class="card-why__title">
+                                    Successful preparation for the international IELTS exam
+                                </h3>
+                                <p class="card-why__desc">
+                                    We give a 100% guarantee of passing the IELTS exam for the desired score. Our
+                                    classes are held in mini-groups (4-6 people), which helps students to better work
+                                    out all aspects and nuances of the exam. This approach, combined with the rich
+                                    experience and international education of our teachers, gives an excellent result.
+                                </p>
+                            </div>
+                            <div class="why__card card-why">
+                                <div class="card-why__image">
+                                    <picture>
+                                        <source data-srcset="img/why/image6.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/why/image6.jpg" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <h3 class="card-why__title">
+                                    Efficiency and quality of our work
+                                </h3>
+                                <p class="card-why__desc">
+                                    Our work is our reputation. We always work efficiently, competently and complete all
+                                    tasks on time. With us you will not find incorrectly provided information, long
+                                    responses to your letters or empty promises. Our team will take care of the full
+                                    organization of the process of admission to the chosen educational institution, the
+                                    selection of housing (dormitory or apartment rental), visa processing, as well as
+                                    booking tickets and transfers for a trip to the country of study.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sertificates">
+                <div class="sertificates__container container">
+                    <div class="sertificates__body">
+                        <h2 class="sertificates__title title-h2">Certificates</h2>
+                        <p class="sertificates__desc paragraph-s">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <div class="sertificates__cards">
+                            <a href="#" class="sertificates__card card-sertificates">
+                                <div class="card-sertificates__image">
+                                    <picture>
+                                        <source data-srcset="img/certificates/image1.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/certificates/image1.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                            </a>
+                            <a href="#" class="sertificates__card card-sertificates">
+                                <div class="card-sertificates__image">
+                                    <picture>
+                                        <source data-srcset="img/certificates/image2.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/certificates/image2.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                            </a>
+                            <a href="#" class="sertificates__card card-sertificates">
+                                <div class="card-sertificates__image">
+                                    <picture>
+                                        <source data-srcset="img/certificates/image3.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/certificates/image3.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                            </a>
+                        </div>
+                        <a href="#" class="sertificates__btn btn-yellow">
+                            Book a consultation
+                            <svg>
+                                <use href="img/icons/icons.svg#arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="stories">
+                <div class="stories__container container">
+                    <div class="stories__body">
+                        <h2 class="stories__title title-h2">Students Stories</h2>
+                        <p class="stories__desc paragraph-s">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <div class="stories__cards">
+                            <div class="stories__card card-stories">
+                                <div class="card-stories__main">
+                                    <div class="card-stories__info">
+                                        <div class="card-stories__rating rating">
+                                            <div class="rating__body">
+                                                <div class="rating__active"></div>
+                                            </div>
+                                            <div class="rating__value">5</div>
+                                        </div>
+                                        <h4 class="card-stories__title title-h4">Confirmed my B1 level.</h4>
+                                        <p class="card-stories__desc paragraph-s">
+                                            Having completed training at The Academic Advisor, I managed to successfully
+                                            pass the PET exam and confirm English at the B1 level. Preparing for the
+                                            exam was a pleasure! I recommend to everyone!
+                                        </p>
+                                    </div>
+                                    <div class="card-stories__image">
+                                        <picture>
+                                            <source data-srcset="img/stories/image1.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/stories/image1.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="card-stories__label">
+                                    Топ 10 в UK
+                                </div>
+                                <div class="card-stories__footer">
+                                    <div class="card-stories__details">
+                                        <div class="card-stories__name">Student Name</div>
+                                        <div class="card-stories__date">12.12.2023</div>
+                                    </div>
+                                    <a href="#" class="card-stories__link">
+                                        Read
+                                        <svg>
+                                            <use href="img/icons/icons.svg#arrow"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="stories__card card-stories">
+                                <div class="card-stories__main">
+                                    <div class="card-stories__info">
+                                        <div class="card-stories__rating rating">
+                                            <div class="rating__body">
+                                                <div class="rating__active"></div>
+                                            </div>
+                                            <div class="rating__value">5</div>
+                                        </div>
+                                        <h4 class="card-stories__title title-h4">Confirmed my B1 level.</h4>
+                                        <p class="card-stories__desc paragraph-s">
+                                            Having completed training at The Academic Advisor, I managed to successfully
+                                            pass the PET exam and confirm English at the B1 level. Preparing for the
+                                            exam was a pleasure! I recommend to everyone!
+                                        </p>
+                                    </div>
+                                    <div class="card-stories__image">
+                                        <picture>
+                                            <source data-srcset="img/stories/image2.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/stories/image2.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="card-stories__label">
+                                    10000 фунтов стипендия
+                                </div>
+                                <div class="card-stories__footer">
+                                    <div class="card-stories__details">
+                                        <div class="card-stories__name">Student Name</div>
+                                        <div class="card-stories__date">12.12.2023</div>
+                                    </div>
+                                    <a href="#" class="card-stories__link">
+                                        Read
+                                        <svg>
+                                            <use href="img/icons/icons.svg#arrow"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="stories__card card-stories">
+                                <div class="card-stories__main">
+                                    <div class="card-stories__info">
+                                        <div class="card-stories__rating rating">
+                                            <div class="rating__body">
+                                                <div class="rating__active"></div>
+                                            </div>
+                                            <div class="rating__value">5</div>
+                                        </div>
+                                        <h4 class="card-stories__title title-h4">Confirmed my B1 level.</h4>
+                                        <p class="card-stories__desc paragraph-s">
+                                            Having completed training at The Academic Advisor, I managed to successfully
+                                            pass the PET exam and confirm English at the B1 level. Preparing for the
+                                            exam was a pleasure! I recommend to everyone!
+                                        </p>
+                                    </div>
+                                    <div class="card-stories__image">
+                                        <picture>
+                                            <source data-srcset="img/stories/image3.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/stories/image3.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="card-stories__label">
+                                    Топ 10 в UK
+                                </div>
+                                <div class="card-stories__footer">
+                                    <div class="card-stories__details">
+                                        <div class="card-stories__name">Student Name</div>
+                                        <div class="card-stories__date">12.12.2023</div>
+                                    </div>
+                                    <a href="#" class="card-stories__link">
+                                        Read
+                                        <svg>
+                                            <use href="img/icons/icons.svg#arrow"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="stories__card card-stories">
+                                <div class="card-stories__main">
+                                    <div class="card-stories__info">
+                                        <div class="card-stories__rating rating">
+                                            <div class="rating__body">
+                                                <div class="rating__active"></div>
+                                            </div>
+                                            <div class="rating__value">5</div>
+                                        </div>
+                                        <h4 class="card-stories__title title-h4">Confirmed my B1 level.</h4>
+                                        <p class="card-stories__desc paragraph-s">
+                                            Having completed training at The Academic Advisor, I managed to successfully
+                                            pass the PET exam and confirm English at the B1 level. Preparing for the
+                                            exam was a pleasure! I recommend to everyone!
+                                        </p>
+                                    </div>
+                                    <div class="card-stories__image">
+                                        <picture>
+                                            <source data-srcset="img/stories/image4.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/stories/image4.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="card-stories__label">
+                                    10000 фунтов стипендия
+                                </div>
+                                <div class="card-stories__footer">
+                                    <div class="card-stories__details">
+                                        <div class="card-stories__name">Student Name</div>
+                                        <div class="card-stories__date">12.12.2023</div>
+                                    </div>
+                                    <a href="#" class="card-stories__link">
+                                        Read
+                                        <svg>
+                                            <use href="img/icons/icons.svg#arrow"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="instagram">
+                <div class="instagram__container container">
+                    <div class="instagram__body">
+                        <div class="instagram__info">
+                            <h2 class="instagram__title title-h2">Follow us on Instagram</h2>
+                            <p class="instagram__desc paragraph-s">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            <button class="instagram__btn btn-yellow">
+                                <svg>
+                                    <use href="img/icons/icons.svg#instagram"></use>
+                                </svg>
+                                Follow
+                            </button>
+                        </div>
+                        <div class="instagram__gallery">
+                            <div class="instagram__grid">
+                                <div class="instagram__item">
+                                    <div class="instagram__image">
+                                        <picture>
+                                            <source data-srcset="img/instagram/image1.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/instagram/image1.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="instagram__item">
+                                    <div class="instagram__image">
+                                        <picture>
+                                            <source data-srcset="img/instagram/image2.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/instagram/image2.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="instagram__item">
+                                    <div class="instagram__image">
+                                        <picture>
+                                            <source data-srcset="img/instagram/image3.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/instagram/image3.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="instagram__item">
+                                    <div class="instagram__image">
+                                        <picture>
+                                            <source data-srcset="img/instagram/image4.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/instagram/image4.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="instagram__item">
+                                    <div class="instagram__image">
+                                        <picture>
+                                            <source data-srcset="img/instagram/image5.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/instagram/image5.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="results">
+                <div class="results__container container">
+                    <div class="results__body">
+                        <h2 class="results__title title-h2">Student Results</h2>
+                        <p class="results__desc paragraph-s">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
+                </div>
+                <div class="results__slider">
+                    <div class="results__wrapper swiper-wrapper">
+                        <div class="results__slide swiper-slide">
+                            <a href="#" class="results__item">
+                                <div class="results__image">
+                                    <picture>
+                                        <source data-srcset="img/results/image1.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/results/image1.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <div class="results__name">University Name</div>
+                            </a>
+                        </div>
+                        <div class="results__slide swiper-slide">
+                            <a href="#" class="results__item">
+                                <div class="results__image">
+                                    <picture>
+                                        <source data-srcset="img/results/image2.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/results/image2.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <div class="results__name">University Name</div>
+                            </a>
+                        </div>
+                        <div class="results__slide swiper-slide">
+                            <a href="#" class="results__item">
+                                <div class="results__image">
+                                    <picture>
+                                        <source data-srcset="img/results/image3.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/results/image3.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <div class="results__name">University Name</div>
+                            </a>
+                        </div>
+                        <div class="results__slide swiper-slide">
+                            <a href="#" class="results__item">
+                                <div class="results__image">
+                                    <picture>
+                                        <source data-srcset="img/results/image4.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/results/image4.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <div class="results__name">University Name</div>
+                            </a>
+                        </div>
+                        <div class="results__slide swiper-slide">
+                            <a href="#" class="results__item">
+                                <div class="results__image">
+                                    <picture>
+                                        <source data-srcset="img/results/image5.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/results/image5.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <div class="results__name">University Name</div>
+                            </a>
+                        </div>
+                        <div class="results__slide swiper-slide">
+                            <a href="#" class="results__item">
+                                <div class="results__image">
+                                    <picture>
+                                        <source data-srcset="img/results/image6.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/results/image6.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <div class="results__name">University Name</div>
+                            </a>
+                        </div>
+                        <div class="results__slide swiper-slide">
+                            <a href="#" class="results__item">
+                                <div class="results__image">
+                                    <picture>
+                                        <source data-srcset="img/results/image7.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/results/image7.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <div class="results__name">University Name</div>
+                            </a>
+                        </div>
+                        <div class="results__slide swiper-slide">
+                            <a href="#" class="results__item">
+                                <div class="results__image">
+                                    <picture>
+                                        <source data-srcset="img/results/image8.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/results/image8.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <div class="results__name">University Name</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text">
+                <div class="text__container container">
+                    <div class="text__body">
+                        <div class="text__block paragraph-s">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                in
+                                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                in
+                                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                        <button class="text__more btn-yellow">
+                            Show more
+                            <svg>
+                                <use href="img/icons/icons.svg#arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__body">
+            <div class="footer__main">
+                <div class="footer__logo logo-footer">
+                    <a href="#" class="logo-footer__link">
+                        <picture><source srcset="img/logo-light.webp" type="image/webp"><img src="img/logo-light.png" alt="Logo"></picture>
+                    </a>
+                    <div class="logo-footer__socials">
+                        <a href="#" class="logo-footer__social">
+                            <img src="img/icons/mail.svg" alt="Icon">
+                        </a>
+                        <a href="#" class="logo-footer__social">
+                            <img src="img/icons/instagram.svg" alt="Icon">
+                        </a>
+                        <a href="#" class="logo-footer__social">
+                            <img src="img/icons/facebook.svg" alt="Icon">
+                        </a>
+                        <a href="#" class="logo-footer__social">
+                            <img src="img/icons/youtube.svg" alt="Icon">
+                        </a>
+                        <a href="#" class="logo-footer__social">
+                            <img src="img/icons/telegram.svg" alt="Icon">
+                        </a>
+                        <a href="#" class="logo-footer__social">
+                            <img src="img/icons/whatsapp.svg" alt="Icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__menu menu-footer">
+                    <nav class="menu-footer__block">
+                        <h3 class="menu-footer__title">Company</h3>
+                        <ul class="menu-footer__list">
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">About Us</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Full support</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Student stories</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Blog</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Contacts</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">For Partners</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="menu-footer__block">
+                        <h3 class="menu-footer__title">Education</h3>
+                        <ul class="menu-footer__list">
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Secondary education</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Pathway Programs</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Higher education</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Summer Schools</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Contacts</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">Countries</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="menu-footer__block">
+                        <h3 class="menu-footer__title">Registration Address:</h3>
+                        <div class="menu-footer__contacts">
+                            6 St. Davids Square <br>
+                            London <br>
+                            E14 3WA <br>
+                            United Kingdom
+                        </div>
+                    </div>
+                    <div class="menu-footer__block">
+                        <h3 class="menu-footer__title">Call us</h3>
+                        <ul class="menu-footer__list">
+                            <li class="menu-footer__item">
+                                <a href="380503361499" class="menu-footer__link">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#phone"></use>
+                                    </svg>
+                                    + 380 (50) 336 14 99
+                                </a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="380930222773" class="menu-footer__link">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#phone"></use>
+                                    </svg>
+                                    + 380 (93) 022 27 73
+                                </a>
+                            </li>
+                        </ul>
+                        <h3 class="menu-footer__title menu-footer__title_desk">Message us</h3>
+                        <ul class="menu-footer__list menu-footer__list_desk">
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">
+                                    <img src="img/icons/telegram.svg" alt="Icon">
+                                    + 380 (93) 022 27 73
+                                </a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="#" class="menu-footer__link">
+                                    <img src="img/icons/whatsapp.svg" alt="Icon">
+                                    + 380 (50) 336 14 99
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__subscribe subscribe-footer">
+                    <h3 class="subscribe-footer__title">Subscribe</h3>
+                    <p class="subscribe-footer__desc">
+                        Join our newsletter to stay up to date on features and releases.
+                    </p>
+                    <form action="#" class="subscribe-footer__form">
+                        <input type="text" placeholder="Enter your email">
+                        <button type="submit" class="subscribe-footer__btn btn-yellow">
+                            Subscribe
+                        </button>
+                    </form>
+                    <p class="subscribe-footer__agreement">
+                        By subscribing you agree to with our <a href="#" class="subscribe-footer__link">Privacy
+                            Policy</a> and
+                        provide consent to receive updates from
+                        our company.
+                    </p>
+                </div>
+            </div>
+            <div class="footer__bottom bottom-footer">
+                <div class="bottom-footer__rights">© 2023 The Academic Advisor. All rights reserved.</div>
+                <div class="bottom-footer__links">
+                    <a href="#" class="bottom-footer__link">Privacy Policy</a>
+                    <a href="#" class="bottom-footer__link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+
+    <script src="js/app.min.js?_v=20231014140236"></script>
+</body>
+
+</html>
