@@ -1234,6 +1234,18 @@ input {
   background: #F7F7F7;
 }
 
+.services_light,
+.cards-grid_light {
+  background: #FFF;
+}
+
+.services_light .card-services,
+.services_light .item-cards-grid,
+.cards-grid_light .card-services,
+.cards-grid_light .item-cards-grid {
+  background: #F7F7F7;
+}
+
 .services__body,
 .cards-grid__body {
   padding: 72px 0;
@@ -4001,7 +4013,7 @@ input {
     justify-content: flex-start;
     padding: 16px;
     transform: translate(100%, 0);
-    transition: all 0.3s linear;
+    transition: all 0.15s linear;
     height: calc(var(--app-height) - 96px - 52px);
     overflow-y: auto;
   }
