@@ -3679,8 +3679,8 @@ input {
   transform: translate(0, -50%);
   width: 12px;
   height: 12px;
-  -webkit-mask: url("../../img/icons/icons.svg#check") 50% no-repeat;
-          mask: url("../../img/icons/icons.svg#check") 50% no-repeat;
+  -webkit-mask: url("../img/icons/icons.svg#check") 50% no-repeat;
+          mask: url("../img/icons/icons.svg#check") 50% no-repeat;
   background: #fff;
 }
 
@@ -3762,7 +3762,7 @@ input {
   top: 0;
   width: 24px;
   height: 24px;
-  background: url("../../img/icons/icons.svg#info") 50% no-repeat;
+  background: url("../img/icons/icons.svg#info") 50% no-repeat;
 }
 
 .block-form__info p:not(:last-child) {
