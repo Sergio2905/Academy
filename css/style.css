@@ -948,6 +948,10 @@ ol > li::before {
   display: none;
 }
 
+.menu__item::before {
+  display: none;
+}
+
 .menu__link {
   color: var(--blue);
   transition: all 0.3s linear;
@@ -979,6 +983,10 @@ ol > li::before {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.submenu__item::before {
+  display: none;
 }
 
 .submenu__link {
@@ -3659,6 +3667,21 @@ ol > li::before {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.form__step {
+  position: absolute;
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.form__step.active {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
 }
 
 .form__label {
@@ -4014,6 +4037,10 @@ ol > li::before {
 
 .menu-footer__item {
   padding: 4px 0;
+}
+
+.menu-footer__item::before {
+  display: none;
 }
 
 .menu-footer__link {

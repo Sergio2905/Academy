@@ -266,76 +266,254 @@
                     </div>
                 </div>
             </div>
-            <form action="#" class="form form_second">
+            <form action="#" class="form">
                 <div class="form__container container">
                     <div class="form__body">
-                        <span class="form__label">Step 3</span>
-                        <h3 class="form__title title-h3">Submit the form</h3>
-                        <p class="form__desc paragraph-s">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
-                        </p>
-                        <div class="form__block block-form">
-                            <p class="block-form__label">
-                                Где Вы сейчас учитесь? (школа, университет и т.д)
+                        <div id="step1" class="form__step active">
+                            <span class="form__label">Step 1</span>
+                            <h3 class="form__title title-h3">Submit the form</h3>
+                            <p class="form__desc paragraph-s">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
                             </p>
-                            <input class="block-form__input contacts-input" type="text" placeholder="Placeholder">
-                        </div>
-                        <div class="form__block block-form">
-                            <p class="block-form__label">
-                                Какой уровень образования в Великобритании рассматриваете?
-                            </p>
-                            <div class="block-form__radio-50 radio_light radio-options">
-                                <div class="radio__item radio-options__item">
-                                    Среднее образование: GCSE, IB, A-level, BTEC
-                                    <input type="radio" name="level" value="level1">
+                            <div class="form__wrapper" data-spollers>
+                                <div class="form__block block-form _active">
+                                    <h6 class="block-form__title _active" data-spoller>
+                                        Как вас зовут?
+                                        <svg>
+                                            <use href="img/icons/icons.svg#arrow2"></use>
+                                        </svg>
+                                    </h6>
+                                    <div class="block-form__body">
+                                        <input class="block-form__input contacts-input" type="text"
+                                            placeholder="Placeholder">
+                                    </div>
                                 </div>
-                                <div class="radio__item radio-options__item">
-                                    Подготовительный год (Foundation, IYO, Pre-Master)
-                                    <input type="radio" name="level" value="level2">
+                                <div class="form__block block-form _active">
+                                    <h6 class="block-form__title _active" data-spoller>
+                                        Кто Вы:
+                                        <svg>
+                                            <use href="img/icons/icons.svg#arrow2"></use>
+                                        </svg>
+                                    </h6>
+                                    <div class="block-form__body">
+                                        <div class="block-form__radio radio_dark radio-options">
+                                            <div class="radio__item radio-options__item">
+                                                Будущий студент
+                                                <input type="radio" name="human" value="student">
+                                            </div>
+                                            <div class="radio__item radio-options__item">
+                                                Родитель
+                                                <input type="radio" name="human" value="parent">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="radio__item radio-options__item">
-                                    Высшее оброазование: Бакалавриат, Магистратура
-                                    <input type="radio" name="level" value="level3">
+                                <div class="form__block block-form _active">
+                                    <h6 class="block-form__title _active" data-spoller>
+                                        Ваша контактная информация для связи
+                                        <svg>
+                                            <use href="img/icons/icons.svg#arrow2"></use>
+                                        </svg>
+                                    </h6>
+                                    <div class="block-form__body">
+                                        <p class="block-form__label">
+                                            E-mail адрес:
+                                        </p>
+                                        <input class="block-form__input contacts-input" type="text"
+                                            placeholder="Placeholder">
+                                        <p class="block-form__label">
+                                            Контактный номер телефона и @username для связи в мессенджерах:
+                                        </p>
+                                        <input class="block-form__input contacts-input" type="text"
+                                            placeholder="Placeholder">
+                                        <p class="block-form__label">
+                                            Удобный мессенджер для связи:
+                                        </p>
+                                        <div class="block-form__radio radio_light radio-options">
+                                            <div class="radio__item radio-options__item">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#telegram-color"></use>
+                                                </svg>
+                                                Telegram
+                                                <input type="radio" name="app" value="Telegram">
+                                            </div>
+                                            <div class="radio__item radio-options__item">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#whatsapp-color"></use>
+                                                </svg>
+                                                WhatsApp
+                                                <input type="radio" name="app" value="WhatsApp">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="radio__item radio-options__item">
-                                    Летние академические школы для детей и подростков.
-                                    <input type="radio" name="level" value="level4">
+                                <div class="form__block block-form _active">
+                                    <h6 class="block-form__title _active" data-spoller>
+                                        Меня интересует
+                                        <svg>
+                                            <use href="img/icons/icons.svg#arrow2"></use>
+                                        </svg>
+                                    </h6>
+                                    <div class="block-form__body">
+                                        <div class="block-form__radio radio_big radio-options">
+                                            <div class="radio__item radio-options__item">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#call"></use>
+                                                </svg>
+                                                Короткий телефонный звонок (5 минут)
+                                                <input type="radio" name="human" value="student">
+                                            </div>
+                                            <div class="radio__item radio-options__item">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#camera"></use>
+                                                </svg>
+                                                Платная online консультация по Zoom (60 минут)
+                                                <input type="radio" name="human" value="parent">
+                                            </div>
+                                            <div class="radio__item radio-options__item">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#earphones"></use>
+                                                </svg>
+                                                Полное сопровождение (узнать детали или получить брошюру о
+                                                сопровождении)
+                                                <input type="radio" name="human" value="parent">
+                                            </div>
+                                        </div>
+                                        <div class="block-form__info">
+                                            <p>
+                                                Бесплатный звонок (консультация) включает: обсуждение неспецифических
+                                                общих
+                                                вопросов, касающихся полного сопровождения и взаимодействия со
+                                                студентом;
+                                                краткие ответы на базовые вопросы, касающиеся общего алгоритма
+                                                поступления в
+                                                Великобританию.
+                                            </p>
+                                            <p>
+                                                Платная online консультация включает: предварительный анализ профиля
+                                                студента, детальный разбор индивидуальных вопросов, оценка шансов,
+                                                рекомендации по оптимальной стратегии поступления, расчёт бюджета,
+                                                помощь с
+                                                выбором специальности (при необходимости), информация о рынке труда,
+                                                стажировках и дальнейшем трудоустройстве.
+                                            </p>
+                                            <p>
+                                                Полное сопровождение - Брошюра The Academic Advisor включает: детальное
+                                                описание истории и профиля компании, информацию о ее сертификации и
+                                                аккредитации, полному сопровождению, платной консультации, ценовой
+                                                политике,
+                                                а также примеры индивидуального подбора учебных заведений для наших
+                                                клиентов.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="form__checkbox checkbox">
+                                I accept the Terms
+                                <input type="checkbox" name="agreement">
+                            </div>
+                            <button type="button" class="form__btn btn-yellow" data-target="step2">
+                                Next
+                                <svg>
+                                    <use href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                            </button>
                         </div>
-                        <div class="form__block block-form">
-                            <p class="block-form__label">
-                                Какой желаемый год поступления
+                        <div id="step2" class="form__step">
+                            <span class="form__label">Step 2</span>
+                            <h3 class="form__title title-h3">Submit the form</h3>
+                            <p class="form__desc paragraph-s">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
                             </p>
-                            <div class="block-form__radio-33 radio_light radio-options">
-                                <div class="radio__item radio-options__item">
-                                    2024
-                                    <input type="radio" name="year" value="2024">
-                                </div>
-                                <div class="radio__item radio-options__item">
-                                    2025
-                                    <input type="radio" name="year" value="2025">
-                                </div>
-                                <div class="radio__item radio-options__item">
-                                    2026
-                                    <input type="radio" name="year" value="2026">
+                            <div class="form__block block-form">
+                                <p class="block-form__label">
+                                    Детально опишите вопрос, который хотели бы обсудить в рамках звонка
+                                </p>
+                                <textarea class="block-form__area textarea" name="message"
+                                    placeholder="Placeholder"></textarea>
+                            </div>
+                            <button type="button" class="form__btn btn-yellow" data-target="step3">
+                                Book a consultation
+                                <svg>
+                                    <use href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="step3" class="form__step">
+                            <span class="form__label">Step 3</span>
+                            <h3 class="form__title title-h3">Submit the form</h3>
+                            <p class="form__desc paragraph-s">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
+                            </p>
+                            <div class="form__block block-form">
+                                <p class="block-form__label">
+                                    Где Вы сейчас учитесь? (школа, университет и т.д)
+                                </p>
+                                <input class="block-form__input contacts-input" type="text" placeholder="Placeholder">
+                            </div>
+                            <div class="form__block block-form">
+                                <p class="block-form__label">
+                                    Какой уровень образования в Великобритании рассматриваете?
+                                </p>
+                                <div class="block-form__radio-50 radio_light radio-options">
+                                    <div class="radio__item radio-options__item">
+                                        Среднее образование: GCSE, IB, A-level, BTEC
+                                        <input type="radio" name="level" value="level1">
+                                    </div>
+                                    <div class="radio__item radio-options__item">
+                                        Подготовительный год (Foundation, IYO, Pre-Master)
+                                        <input type="radio" name="level" value="level2">
+                                    </div>
+                                    <div class="radio__item radio-options__item">
+                                        Высшее оброазование: Бакалавриат, Магистратура
+                                        <input type="radio" name="level" value="level3">
+                                    </div>
+                                    <div class="radio__item radio-options__item">
+                                        Летние академические школы для детей и подростков.
+                                        <input type="radio" name="level" value="level4">
+                                    </div>
                                 </div>
                             </div>
+                            <div class="form__block block-form">
+                                <p class="block-form__label">
+                                    Какой желаемый год поступления
+                                </p>
+                                <div class="block-form__radio-33 radio_light radio-options">
+                                    <div class="radio__item radio-options__item">
+                                        2024
+                                        <input type="radio" name="year" value="2024">
+                                    </div>
+                                    <div class="radio__item radio-options__item">
+                                        2025
+                                        <input type="radio" name="year" value="2025">
+                                    </div>
+                                    <div class="radio__item radio-options__item">
+                                        2026
+                                        <input type="radio" name="year" value="2026">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__block block-form">
+                                <p class="block-form__label">
+                                    Вкратце опишите пожалуйста свой профиль, вопросы и пожелания.
+                                </p>
+                                <textarea class="block-form__area textarea" name="message"
+                                    placeholder="Placeholder"></textarea>
+                            </div>
+                            <button type="submit" class="form__btn btn-yellow">
+                                Next
+                                <svg>
+                                    <use href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                            </button>
                         </div>
-                        <div class="form__block block-form">
-                            <p class="block-form__label">
-                                Вкратце опишите пожалуйста свой профиль, вопросы и пожелания.
-                            </p>
-                            <textarea class="block-form__area textarea" name="message"
-                                placeholder="Placeholder"></textarea>
-                        </div>
-                        <button type="submit" class="form__btn btn-yellow">
-                            Next
-                            <svg>
-                                <use href="img/icons/icons.svg#arrow"></use>
-                            </svg>
-                        </button>
                     </div>
                 </div>
             </form>
