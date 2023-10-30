@@ -129,34 +129,29 @@ body.lock {
   flex: 1 1 auto;
 }
 
-h1,
 .title-h1 {
   font-size: 4rem;
   font-weight: 600;
 }
 
-h2,
 .title-h2 {
   font-size: 3rem;
   font-weight: 600;
   color: var(--blue);
 }
 
-h3,
 .title-h3 {
   font-size: 2rem;
   font-weight: 600;
   color: var(--blue);
 }
 
-h4,
 .title-h4 {
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--blue);
 }
 
-h5,
 .title-h5 {
   font-size: 1.125rem;
   font-weight: 600;
@@ -179,16 +174,6 @@ h6 {
   color: var(--blue);
   line-height: 1.5;
   opacity: 0.7;
-}
-
-p {
-  color: var(--blue);
-  line-height: 1.5;
-}
-
-b,
-strong {
-  font-weight: 700;
 }
 
 .btn-yellow {
@@ -413,42 +398,6 @@ input {
 
 .list__item:not(:last-child) {
   margin-bottom: 8px;
-}
-
-ul > li {
-  position: relative;
-  padding-left: 12px;
-  line-height: 1.5;
-}
-
-ul > li::before {
-  content: "";
-  position: absolute;
-  width: 4px;
-  height: 4px;
-  left: 0;
-  top: 9px;
-  border-radius: 50%;
-  overflow: hidden;
-  background: #000;
-}
-
-ol {
-  counter-reset: num-list;
-}
-
-ol > li {
-  position: relative;
-  padding-left: 20px;
-  line-height: 1.5;
-}
-
-ol > li::before {
-  counter-increment: num-list;
-  content: counter(num-list) ". ";
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .pagination {
@@ -2871,6 +2820,86 @@ ol > li::before {
      object-fit: cover;
 }
 
+.article h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.article h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+.article h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+.article h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+.article h5 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+.article h6 {
+  font-weight: 600;
+  color: var(--blue);
+}
+
+.article ul > li {
+  position: relative;
+  padding-left: 12px;
+  line-height: 1.5;
+}
+
+.article ul > li::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  left: 0;
+  top: 9px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #000;
+}
+
+.article ol {
+  counter-reset: num-list;
+}
+
+.article ol > li {
+  position: relative;
+  padding-left: 20px;
+  line-height: 1.5;
+}
+
+.article ol > li::before {
+  counter-increment: num-list;
+  content: counter(num-list) ". ";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.article p {
+  color: var(--blue);
+  line-height: 1.5;
+}
+
+.article b,
+.article strong {
+  font-weight: 700;
+}
+
 .article_univercity .title-h4 {
   padding-bottom: 8px;
   border-bottom: 1px solid rgba(23, 36, 43, 0.15);
@@ -2988,7 +3017,7 @@ ol > li::before {
 }
 
 .apply__title {
-  color: var(--white);
+  color: var(--white) !important;
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 16px;
@@ -2996,7 +3025,7 @@ ol > li::before {
 }
 
 .apply__desc {
-  color: var(--white);
+  color: var(--white) !important;
   margin-bottom: 16px;
   text-align: center;
 }
@@ -4144,12 +4173,10 @@ ol > li::before {
 }
 
 @media (max-width: 1512px) {
-  h1,
   .title-h1 {
     font-size: calc(3rem + 16 * (100vw - 20rem) / 1192);
   }
 
-  h2,
   .title-h2 {
     font-size: calc(2rem + 16 * (100vw - 20rem) / 1192);
   }
@@ -4400,6 +4427,14 @@ ol > li::before {
 
   .intro__info {
     margin-right: calc(10px + 54 * (100vw - 320px) / 1192);
+  }
+
+  .article h1 {
+    font-size: calc(3rem + 16 * (100vw - 20rem) / 1192);
+  }
+
+  .article h2 {
+    font-size: calc(2rem + 16 * (100vw - 20rem) / 1192);
   }
 
   .article__body {
